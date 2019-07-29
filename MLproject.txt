@@ -1,0 +1,10 @@
+name: Image Classification
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      Arguments: dictionary
+      arguments = {"keywords":"Dalai Lama,Martin Luther King Jr,Mahatma Gandhi,Nelson Mandela,Swami Vivekananda,Woodrow Wilson,Winston Churchill,Mother Teresa,"limit":20,"print_urls":True}
+    command : classify.py argument
